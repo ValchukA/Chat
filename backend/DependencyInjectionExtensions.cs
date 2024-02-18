@@ -1,11 +1,10 @@
-﻿namespace Chat.Api
+﻿namespace Chat.Api;
+
+internal static class DependencyInjectionExtensions
 {
-    internal static class DependencyInjectionExtensions
+    public static void AddApiServices(this IServiceCollection services)
     {
-        public static void AddApiServices(this IServiceCollection services)
-        {
-            services.AddControllers();
-            services.AddSwaggerGen();
-        }
+        services.AddControllers();
+        services.AddSwaggerGen();
     }
 }
