@@ -2,7 +2,6 @@
 
 internal static class DependencyInjectionExtensions
 {
-
     public static void AddApiServices(this IServiceCollection services)
     {
         services.AddControllers();
