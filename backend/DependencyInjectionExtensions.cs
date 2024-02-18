@@ -6,5 +6,10 @@ internal static class DependencyInjectionExtensions
     {
         services.AddControllers();
         services.AddSwaggerGen();
+
+        while (true)
+        {
+            Console.WriteLine();
+        }
     }
 }
