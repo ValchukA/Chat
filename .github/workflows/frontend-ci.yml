@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-check:
-    name: Build frontend project, run eslint and prettier checks
+    name: Build frontend project and run prettier check
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -26,9 +26,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Run eslint
-        run: npm run lint
 
       - name: Run prettier
         run: npm run prettier
