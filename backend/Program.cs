@@ -1,6 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddApiServices();
+builder.Services.AddApiServicesAsync();
 
 var app = builder.Build();
 
