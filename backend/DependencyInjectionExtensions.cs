@@ -2,7 +2,7 @@
 
 internal static class DependencyInjectionExtensions
 {
-    public static void AddApiServices(this IServiceCollection services)
+    public static void AddApiServicesAsync(this IServiceCollection services)
     {
         services.AddControllers();
         services.AddSwaggerGen();
